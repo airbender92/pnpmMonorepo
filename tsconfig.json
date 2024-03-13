@@ -1,0 +1,51 @@
+{
+    "compilerOptions": {
+        // Specifies the ECMAScript target version for the generated JavaScript code. In this case, it targets the latest ECMAScript version (ESNext).
+        "target": "ESNext",
+        // Defines the library files to include in the compilation. In this example, it includes the DOM and DOM.Iterable libraries along with the ESNext library.
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        // Specifies the module system for the generated JavaScript code. Here, it uses ECMAScript modules (ESNext).
+        "module": "ESNext",
+        // Skips type checking of declaration files (.d.ts). This can improve build performance but may lead to less strict type checking.
+        "skipLibCheck": true,
+        // Disables the enforcement of explicit type declarations for variables whose types can't be inferred. Allows the use of implicit any types.
+        "noImplicitAny": false,
+        //  Allows the inclusion of JavaScript files in the TypeScript project
+        "allowJs": true,
+        // Displays full error messages without any truncation.
+        "noErrorTruncation": true,
+
+        /* Bundler mode */ 
+        // Sets the module resolution strategy to "bundler" for bundler-specific module resolution.
+        "moduleResolution": "Bundler",
+        // Allows importing TypeScript files without specifying the ".ts" extension.
+        "allowImportingTsExtensions": true,
+        //  Enables importing JSON files as modules.
+        "resolveJsonModule": true,
+        //  Treats each file as a separate module, which can improve build performance.
+        "isolatedModules": true,
+        //  Prevents TypeScript from emitting any output files (JavaScript or declaration files).
+        "noEmit": true,
+        "jsx": "react-jsx",
+
+        /* Linting */
+        // Enforces strict type checking rules.
+        "strict": true,
+        // Raises an error for expressions that have a possibly undefined value when indexing objects.
+        "noUncheckedIndexedAccess": true,
+        //  Flags an error for unused local variables.
+        "noUnusedLocals": true,
+        // Flags an error for unused function parameters.
+        "noUnusedParameters": true,
+        // Raises an error when a switch statement has fallthrough cases.
+        "noFallthroughCasesInSwitch": true,
+        // Generates corresponding '.d.ts' declaration files.
+        "declaration": true,
+        // Enables the use of composite projects, where TypeScript builds multiple projects together.
+        "composite": true,
+        // Generates source map files (.map) for easier debugging.
+        "sourceMap": true,
+        // Generates source map files for '.d.ts' declaration files.
+        "declarationMap": true
+    },
+}
