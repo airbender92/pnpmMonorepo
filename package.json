@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "common": "pnpm --filter common",
-    "web-app": "pnpm --filter web-app"
+    "web-app": "pnpm --filter web-app",
+    "umi-app": "pnpm --filter umi-app"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [

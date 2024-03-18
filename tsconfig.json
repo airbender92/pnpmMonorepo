@@ -5,7 +5,7 @@
         // Defines the library files to include in the compilation. In this example, it includes the DOM and DOM.Iterable libraries along with the ESNext library.
         "lib": ["DOM", "DOM.Iterable", "ESNext"],
         // Specifies the module system for the generated JavaScript code. Here, it uses ECMAScript modules (ESNext).
-        "module": "ESNext",
+        "module": "CommonJS",
         // Skips type checking of declaration files (.d.ts). This can improve build performance but may lead to less strict type checking.
         "skipLibCheck": true,
         // Disables the enforcement of explicit type declarations for variables whose types can't be inferred. Allows the use of implicit any types.
@@ -48,4 +48,5 @@
         // Generates source map files for '.d.ts' declaration files.
         "declarationMap": true
     },
+    "types": ["node"] 
 }
